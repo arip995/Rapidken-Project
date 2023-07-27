@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Responsive Stylish Navbar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="top">
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#" class="navbar-logo">Employees</a>
+            <ul class="nav-menu" id="navMenu">
+                <li id="employeeRegistrationTab"><a href="#home">Employee registration</a></li>
+                <li id="employeeListingTab"><a href="#about">Employee listing</a></li>
+            </ul>
+            <div class="navbar-toggle" id="navbarToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <div id="employeeRegistration" class="addPage">
+        <div class="container">
+            <h1>Employee Registration</h1>
+            <form id="registrationForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                <label for="position">Position:</label>
+                <input type="text" id="position" required>
+                <label for="about">About:</label>
+                <textarea id="about" required></textarea>
+                <label for="joining_date">Joining Date:</label>
+                <input type="date" id="joining_date" required>
+                <button style="width:100%;" type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="employeeListing" class="addPage">
+        <div class="container">
+            <h1>Employee Listing</h1>
+            <input type="text" id="searchBar" placeholder="Search by name...">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Position</th>
+                        <th>About</th>
+                        <th>Joining Date</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="employeeList">
+                    <!-- Employees will be dynamically added here -->
+                </tbody>
+            </table>
+            <div id="pagination">
+                <button class="pagination" id="prevBtn">Previous</button>
+                <button class="pagination" id="nextBtn">Next</button>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2023 Your Company. All rights reserved.</p>
+    </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
